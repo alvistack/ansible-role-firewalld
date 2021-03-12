@@ -1,8 +1,16 @@
 # Ansible Role for firewalld
 
-## 4.7.0 - TBC
+## 4.8.0 - TBC
 
 ### Major Changes
+
+## 4.7.0 - 2021-03-13
+
+### Major Changes
+
+  - Bugfix [ansible-lint `namespace`](https://github.com/ansible-community/ansible-lint/pull/1451)
+  - Bugfix [ansible-lint `no-handler`](https://github.com/ansible-community/ansible-lint/pull/1402)
+  - Bugfix [ansible-lint `unnamed-task`](https://github.com/ansible-community/ansible-lint/pull/1413)
 
 ## 4.6.0 - 2021-03-08
 
