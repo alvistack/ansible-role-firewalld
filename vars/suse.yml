@@ -16,4 +16,4 @@
 
 _zypper:
   - { state: "latest", name: "firewalld" }
-  - { state: "latest", name: "python3-firewall" }
+  - { state: "latest", name: "python38-firewall" }
