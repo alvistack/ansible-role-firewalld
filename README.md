@@ -1,5 +1,7 @@
 # Ansible Role for firewalld
 
+<img src="/alvistack.svg" width="75" alt="AlviStack">
+
 [![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-firewalld/master)](https://gitlab.com/alvistack/ansible-role-firewalld/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-firewalld.svg)](https://github.com/alvistack/ansible-role-firewalld/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-firewalld.svg)](https://github.com/alvistack/ansible-role-firewalld/blob/master/LICENSE)
