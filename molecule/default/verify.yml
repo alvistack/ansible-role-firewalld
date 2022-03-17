@@ -21,6 +21,6 @@
     - name: firewall-cmd --version
       environment:
         PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-      command: firewall-cmd --version
+      ansible.builtin.command: firewall-cmd --version
       register: result
       changed_when: result is not succeeded
