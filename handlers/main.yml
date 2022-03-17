@@ -15,7 +15,7 @@
 # limitations under the License.
 
 - name: firewalld | systemctl restart firewalld.service
-  service:
+  ansible.builtin.service:
     name: "firewalld.service"
     state: "restarted"
     enabled: true
