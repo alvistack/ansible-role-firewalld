@@ -15,5 +15,5 @@
 # limitations under the License.
 
 _yum:
-  - { state: "latest", name: "firewalld" }
-  - { state: "latest", name: "python-firewall" }
+  - { state: latest, name: firewalld }
+  - { state: latest, name: python-firewall }
