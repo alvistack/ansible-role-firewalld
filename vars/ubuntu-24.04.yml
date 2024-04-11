@@ -16,3 +16,4 @@
 
 _apt:
   - { state: latest, name: firewalld }
+  - { state: latest, name: python3-firewall }
