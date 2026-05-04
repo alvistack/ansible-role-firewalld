@@ -1,5 +1,4 @@
 ---
-
 # Copyright 2026 Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,6 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_dnf:
-  - { state: latest, name: firewalld }
-  - { state: latest, name: python3-firewall }
+- name: yum install
+  ansible.builtin.yum: # noqa fqcn[action-core]
+    name: "{{ item.name }}"
+    state: "{{ item.state }}"
+  loop: "{{ _yum }}"
+  register: result
+  until: result is succeeded
+  notify:
+    - firewalld | systemctl restart firewalld.service
