@@ -25,3 +25,5 @@
   until: result is succeeded
   notify:
     - firewalld | systemctl restart firewalld.service
+  tags:
+    - _zypper
